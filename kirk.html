@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body{
+      background-color: rgba(250, 235, 215, 0.5);
+  }
+  .header{
+    display: flex;
+    align-items: center;
+
+  }
+  .center_content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40vh;
+      text-align: center;
+      flex-direction: column;
+  }
+  .main{
+      font: Arial;
+      font-size: 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Creates 3 equal sections */
+      gap: 3rem;
+      margin: auto;
+      place-items: center;
+  }
+  .section {
+      padding: 20px;
+      text-align: center;
+      background-color: lightgray;
+      border: 1px solid #ddd;
+  }
+  .profile_picture{
+      width: 16rem;
+      height: 16rem;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #333;
+  }
+  .thirdbar > *{
+      padding: 5px;
+  }
+</style>
+<body>
+    <div class="header center_content">
+        <h1>Profile</h1>
+        <p style="font-size: 20px;">I am a programming enthusiast</p>
+    </div>
+    <div class="main">
+        <div class="firstbar">
+            <h1 style="font-size: 25px; text-align: center;">About Me</h1>
+            <p style="font-size: 20px; text-align: center;">
+                I am a third-year Computer Science student at Ashesi University.
+                <br>
+                My key skills are centered around Team Leadership and Co-ordination.
+                <br>
+                I have experience in Java, Python, C++. Also, I have much experience using tools like Canva to create content.
+            </p>
+        </div>
+        <div class="secondbar">
+            <!-- Add the picture to the page -->
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFVdRlFvfIPYA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724368803843?e=1748476800&v=beta&t=R6kknyVGULUkDLUSvnGyFSkLt7V3viQ5dVopBnJq9WY" class="profile_picture">
+        </div>
+        <div class="thirdbar">
+            <h1 style="font-size: 25px">Details</h1>
+            <p style="font-size: 20px;">Name:<br> Kirk Kudoto</p>
+            <p style="font-size: 20px">Age:<br> 21 years</p>
+            <p style="font-size: 20px">Location:<br> Berekuso, Eastern Region, Ghana</p>
+
+            <!-- Add LinkedIn Profile and GitHub Profile -->
+        </div>
+    </div>
+    <a class="center_content" href="index.html">Back to Home</a>
+</body>
+</html>
