@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Parker - Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+  body{
+      background-color: #eebcbc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+  }
+  .header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #7c242a, #919191);
+    color: white;
+    text-align: center;
+  }
+  .center_content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+  }
+  .main{
+      font-size: 1.1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem auto;
+      max-width: 1200px;
+      padding: 0 1rem;
+      place-items: start;
+  }
+  .section {
+      padding: 1.5rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+  }
+  .section:hover {
+      transform: translateY(-5px);
+  }
+  .profile_picture{
+      width: 16rem;
+      height: 16rem;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .thirdbar > *{
+      padding: 5px;
+  }
+  .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+  }
+  .social-links a {
+      color: #333;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+  }
+  .social-links a:hover {
+      color: #6e8efb;
+  }
+  .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+  }
+  .skill {
+      background-color: #e0e7ff;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+  }
+  .back-btn {
+      padding: 0.8rem 1.5rem;
+      background-color: #fb5e5e;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 2rem 0;
+      transition: background-color 0.3s ease;
+  }
+  .back-btn:hover {
+      background-color: #670a0a;
+  }
+  @media (max-width: 768px) {
+      .main {
+          grid-template-columns: 1fr;
+      }
+      .profile_picture {
+          width: 12rem;
+          height: 12rem;
+      }
+  }
+</style>
+<body>
+    <div class="header">
+        <h1>Thomas Parker</h1>
+        <p style="font-size: 1.25rem; margin-top: 0.5rem;">Computer Science Student & Avid Gamer</p>
+    </div>
+    <div class="main">
+        <div class="section firstbar">
+            <h1 style="font-size: 1.5rem; text-align: center; margin-bottom: 1rem;">About Me</h1>
+            <p style="text-align: center; line-height: 1.6;">
+                I am a third-year Computer Science student at Ashesi University with a passion for technology and innovation. My 2-3 years in this school has equipped me with good debugging skills and better teamwork skills.
+            </p>
+            <p style="text-align: center; line-height: 1.6; margin-top: 1rem;">
+                Beyond coding, I enjoy cooking, Gaming and making youtube videos, making art pieces and finding the connection between programming and art.
+            </p>
+            
+            <h2 style="font-size: 1.3rem; margin-top: 1.5rem;">Skills</h2>
+            <div class="skills">
+                <span class="skill">Java</span>
+                <span class="skill">Python</span>
+                <span class="skill">C++</span>
+                <span class="skill">HTML/CSS</span>
+                <span class="skill">Machine Learning</span>
+                <span class="skill">Problem Solving</span>
+            </div>
+        </div>
+        
+        <div class="section secondbar center_content">
+            <img src="profile.png" class="profile_picture" alt="Thomas Parker">
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:thomas@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        
+        <div class="section thirdbar">
+            <h1 style="font-size: 1.5rem; margin-bottom: 1rem;">Details</h1>
+            <div style="margin-bottom: 1rem;">
+                <strong style="font-size: 1.1rem;">Name:</strong><br>
+                <span style="font-size: 1rem;">Thomas Parker</span>
+            </div>
+            <div style="margin-bottom: 1rem;">
+                <strong style="font-size: 1.1rem;">Age:</strong><br>
+                <span style="font-size: 1rem;">21 years</span>
+            </div>
+            <div style="margin-bottom: 1rem;">
+                <strong style="font-size: 1.1rem;">Location:</strong><br>
+                <span style="font-size: 1rem;">Berekuso, Eastern Region, Ghana</span>
+            </div>
+            <div style="margin-bottom: 1rem;">
+                <strong style="font-size: 1.1rem;">Education:</strong><br>
+                <span style="font-size: 1rem;">BSc. Computer Science<br>Ashesi University</span>
+            </div>
+            <div>
+                <strong style="font-size: 1.1rem;">Interests:</strong><br>
+                <span style="font-size: 1rem;">Tech, Leadership, Art, Entrepreneurship, Music</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="center_content">
+        <a class="back-btn" href="index.html">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+    </div>
+</body>
+</html>
